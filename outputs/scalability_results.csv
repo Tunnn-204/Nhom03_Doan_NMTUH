@@ -1,0 +1,4 @@
+data_fraction,n_samples,best_val_pr_auc,runtime_sec
+25%,900,-inf,5.935763599999973
+50%,1800,-inf,5.9880147999999735
+100%,3600,-inf,6.607451900000115

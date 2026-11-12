@@ -1,0 +1,67 @@
+{
+    "csv_file_path": "UCI_Credit_Card.csv",
+    "data_split_seed": 42,
+    "test_size": 0.2,
+    "cv_folds": 3,
+    "ultra_fast_mode": false,
+    "sample_size": 4500,
+    "n_trials_budget": 15,
+    "seeds": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110
+    ],
+    "convergence_threshold": 0.55,
+    "search_space": {
+        "n_estimators": [
+            50,
+            200
+        ],
+        "max_depth": [
+            3,
+            8
+        ],
+        "learning_rate": [
+            0.01,
+            0.3
+        ],
+        "subsample": [
+            0.6,
+            1.0
+        ],
+        "colsample_bytree": [
+            0.6,
+            1.0
+        ],
+        "reg_lambda": [
+            0.001,
+            10.0
+        ],
+        "scale_pos_weight": [
+            1.0,
+            4.0
+        ]
+    },
+    "default_params": {
+        "n_estimators": 100,
+        "max_depth": 6,
+        "learning_rate": 0.3,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "scale_pos_weight": 1.0
+    },
+    "constraints": {
+        "max_cv_runtime_sec": 5.0,
+        "max_overfit_gap": 0.08,
+        "max_model_size_mb": 3.0,
+        "penalty_weight": 0.5
+    }
+}
